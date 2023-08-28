@@ -39,8 +39,10 @@ h1{
 
 .projet{
     border: solid 1px var(--grisfoncé);
-    width: 30%;
+    width: 50%;
+    height: auto;
     padding: calc(var(--spacing) / 2);
+    margin: calc(var(--spacing) / 2);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
