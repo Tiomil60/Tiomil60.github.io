@@ -1,8 +1,11 @@
 :root{
+--color-dark: #000000;
 --couleurfond: #fffff3;
 --couleurviolet: #a593e0;
 --grisclair: #e0e3da;
 --grisfoncé: #566270;
+--catcours: #00FF00;
+--catperso: #4169E1;
 --spacing: 1rem;  
 }
 
@@ -19,10 +22,51 @@ header{
 
 h1{
     color: var(--couleurfond);
+    text-shadow:1px 3px 8px rgba(0,0,0,0.80);
     font-size: calc( var(--spacing)*2);
     text-align: center;
     font-family: 'Asap', sans-serif;
     font-family: 'Raleway', sans-serif;
+}
+
+.main{
+  width: 75vw;  
+  min-height: 75vh; 
+  margin: 10rem auto var(--spacing);
+  display: flex;
+  flex-direction: row;
+}
+
+.projet{
+    border: solid 1px var(--grisfoncé);
+    width: 30%;
+    padding: calc(var(--spacing) / 2);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+
+.cat__projet{
+  color: var(--color-dark);
+  border-radius: 3px;
+  font-size: 0.8rem;
+  padding: 0.3em 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline;
+}
+
+.cat__projet--cours{
+    background-color: var(--catcours);
+}
+
+.cat__projet--perso{
+    background-color: var(--catperso);
+}
+
+.projet__image{
+    width: 100%;
 }
 
 footer{
@@ -47,4 +91,8 @@ footer nav ul{
 footer nav ul li{
     display: inline-block;
     padding: var(--spacing);
+}
+
+footer nav ul li:hover{
+    color: var(--couleurviolet);
 }
