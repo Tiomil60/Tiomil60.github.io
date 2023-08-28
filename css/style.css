@@ -1,11 +1,50 @@
 :root{
-
+--couleurfond: #fffff3;
+--couleurviolet: #a593e0;
+--grisclair: #e0e3da;
+--grisfoncé: #566270;
+--spacing: 1rem;  
 }
 
 body{
+    background-color: var(--couleurfond);
+    width: 100vw;
+    height: 100vh;
+}
 
+header{
+    background-color: var(--grisfoncé);
+    padding: var(--spacing);
 }
 
 h1{
-    color: blue;
+    color: var(--couleurfond);
+    font-size: calc( var(--spacing)*2);
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer{
+    color: var(--couleurfond);
+    background-color: var(--grisfoncé);
+    display: flex;
+    justify-content: center;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    padding: var(--spacing);
+}
+
+footer nav{
+    display: inline-block;
+    text-align: center;
+}
+
+footer nav ul{
+    width: 50vw;
+}
+
+footer nav ul li{
+    display: inline-block;
+    padding: var(--spacing);
 }
